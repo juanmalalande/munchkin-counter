@@ -16,7 +16,7 @@ export const Player = () => {
 
 
   return (
-    <div>
+    <div className='player'>
         <input type= "text" onChange = {e => cambiarNombre(e.target.value)}/>
         <ul>
             <li className={nivel<=0 ? 'tachado': 'nada'}>Nombre: <strong className={nivel<=0 ? 'rojo': 'nada'}>{nombre} </strong></li>

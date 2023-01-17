@@ -9,8 +9,10 @@ function App() {
         <h5>
           Haz click en el botón para agregar los jugadores
         </h5>
-        <AddPlayer />
       </header>
+      <div>
+      <AddPlayer />
+      </div>
     </div>
   );
 }

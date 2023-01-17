@@ -29,7 +29,7 @@ export const AddPlayer = () => {
     
   
     return (
-    <div>
+    <div className='container'>
         <button onClick={handleClick}>Agrega un jugador!</button>
         {jugador && <Player />}
 
