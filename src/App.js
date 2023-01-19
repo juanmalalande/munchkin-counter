@@ -1,17 +1,26 @@
 import './App.css';
 import { AddPlayer } from './components/AddPlayer';
+import { Footer } from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src='./munchkin.jpg' alt="logo" />
-        <h5>
-          Haz click en el botón para agregar los jugadores
-        </h5>
-      </header>
-      <div>
-      <AddPlayer />
+      <div className="container">
+        <div className='row'>
+
+          <div className='col'>
+          <img src='./munchkin.jpg' alt="logo" />
+          <h5>
+            Mata a los Monstruos - Roba los Tesoros - Traiciona a tus Amigos
+          </h5>
+
+            <AddPlayer />
+
+            <Footer />
+          </div>
+
+        </div>
       </div>
     </div>
   );

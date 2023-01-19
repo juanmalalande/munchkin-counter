@@ -1,27 +1,32 @@
 .App {
   text-align: center;
   background-color: #fdcf94;
-  height: auto;
-  width: max-content;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
+  font-family:Arial, Helvetica, sans-serif;
   color: rgb(0, 0, 0);
 }
 
 
-/*.App-header {
-
-
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(3px + 2vmin);
   color: rgb(0, 0, 0);
-}*/
+  border: 2px solid black;
+  padding: 5px;
+  margin: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+}
 
 .container {
   display: flex;
@@ -29,6 +34,22 @@
 
 ul {
   list-style: none;
+}
+.cards{
+  display: grid;
+}
+
+.player {
+    border: 5px solid black;
+    padding: 5px;
+    margin: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+    box-shadow: 10px 10px white;
+    background-color: lightgray;
+    font-size: 25px;
+    justify-content: left;
+    border-radius: 5%;
 }
 
 .rojo {
@@ -43,3 +64,13 @@ img {
   height: 300px;
   width: auto;
 }
+
+button{
+  font-size: 5px;
+  background: rgb(202, 202, 202);
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 5%;
+  
+}
+

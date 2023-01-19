@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import '../App.css';
 
-export const Player2 = () => {
+export const Player5 = () => {
+  
+    const [nombre, setNombre] = useState('Humano')
+    const [nivel, setNivel] = useState(1)
+    const [bonus, setBonus] = useState(0)
 
-  const [nombre, setNombre] = useState('Humano')
-  const [nivel, setNivel] = useState(1)
-  const [bonus, setBonus] = useState(0)
-
-  const cambiarNombre = (nuevoNombre) => {
-      setNombre(nuevoNombre);
-  }
-
-
+    const cambiarNombre = (nuevoNombre) => {
+        setNombre(nuevoNombre);
+    }
 
 
 
-return (
+
+
+  return (
     <div className='player'>
         <input type= "text" onChange = {e => cambiarNombre(e.target.value)} placeholder='Ingresa tu nombre'/>
         <ul>
@@ -33,6 +33,6 @@ return (
                 </li>
             <li><h2><strong>Total: {nivel + bonus}</strong></h2> </li>
         </ul>
-  </div>
-)
+    </div>
+  )
 }
